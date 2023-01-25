@@ -12,7 +12,7 @@ const checkInfo = () => {
 	if (price.value !== '' && people.value !== '' && tip.value !== 0) {
 
 
-		let finishPrice = (parseInt(price.value) + (parseFloat(price.value) * parseFloat(tip.value))) / parseInt(people.value)
+		const finishPrice = (parseInt(price.value) + (parseFloat(price.value) * parseFloat(tip.value))) / parseInt(people.value)
 
 		costInfo.textContent = finishPrice.toFixed(2)
 		costInfoNone.style.display = 'block'
